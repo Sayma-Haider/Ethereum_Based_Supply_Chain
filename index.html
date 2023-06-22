@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri-Food SupplyChain</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: left;">Bangladeshi Agri-Food SupplyChain</h1>
+        <hr>
+        <p style="text-align: left;">Detect the provenance of  price-hike in agri-food supplychain using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-harvest">
+        <h2>Add Members</h2>
+        <div class="form-group">
+            SKU
+            <br>
+            <input class="input-field" type="number" id="sku" name="sku" value=1><br>
+            UPC
+            <br>
+            <input type="number" id="upc" name="upc" value=1><br>
+            Admin ID
+            <br>
+            <input type="text" id="ownerID" name="ownerID" value="0x0989Cf0448Cfecd27Da301240d8770F672595643" size="50"><br>
+            <input type="text" id="farmerID" name="farmerID" value="0x0e29501dB9A71e4FED4565937C17153071Cb65ca" size="50">
+            <button class="btn-farmer" id="button" type="button" data-id="1">Add Farmer</button><br>
+            <input type="text" id="distributorID" name="distributorID" value="0xFc6B872DFe4e0461C436f2A55A2691e30f927975" size="50">
+            <button class="btn-dist" id="button" type="button" data-id="2">Add Distributor</button><br>
+            <input type="text" id="retailerID" name="retailerID" value="0xE816699c59Da96d551b8F5d4A5D73fbdD07beF8b" size="50">
+            <button class="btn-ret" id="button" type="button" data-id="3">Add Retailer</button><br>
+            <input type="text" id="consumerID" name="consumerID" value="0x98f02c33A832F0013d74e678fc3E925497059763" size="50">
+            <button class="btn-cus" id="button" type="button" data-id="4">Add Customer</button><br>
+            
+        </div>
+        <div class=form-break></div>
+        <h2>Fillout the following details to add a product</h2>
+        <!--<h2>Farmer Details</h2>-->
+        <div class="form-group">
+            Farmer ID
+            <br>
+            <input type="text" id="farmerID" name="farmerID" value="0x0e29501dB9A71e4FED4565937C17153071Cb65ca"
+                size="50"><br>
+            Farmer Name
+            <br>
+            <input type="text" id="farmerName" name="farmerName" value="XYZ"><br>
+            Farmer Information
+            <br>
+            <input type="text" id="farmerInformation" name="farmerInformation" value="Vegetable Farmer"><br>
+            Farmer Latitude
+            <br>
+            <input type="text" id="farmerLatitude" name="farmerLatitude" value="23.4194° N"><br>
+            Farmer Longitude
+            <br>
+            <input type="text" id="farmerLongitude" name="farmerLongitude" value="91.1365° E"><br>
+        </div>
+        <!--<div class=form-break></div>
+        <h2>Product Details</h2>-->
+        <div class="form-group">
+            Product Notes
+            <br>
+            <input type="text" id="productNotes" name="productNotes" value="bafybeicsug67adbfyvhpn2vabqen2cvneefs7qfoqjyee6tgqwb5okg2fi.ipfs.w3s.link/" size="60"><br>
+            Product Price
+            <br>
+            <input type="number" id="productPrice" name="productPrice" value=1>ETH<br>
+            Distributor ID
+            <br>
+            <input type="text" id="distributorID" name="distributorID" value="0xFc6B872DFe4e0461C436f2A55A2691e30f927975"
+                size="50">
+            <br>
+            Retailer ID
+            <br>
+            <input type="text" id="retailerID" name="retailerID" value="0xE816699c59Da96d551b8F5d4A5D73fbdD07beF8b"
+                size="50"><br>
+            Consumer ID
+            <br>
+            <input type="text" id="consumerID" name="consumerID" value="0x98f02c33A832F0013d74e678fc3E925497059763"
+                size="50"><br>
+            <br>
+            
+            <button class="btn-add" id="button" type="button" data-id="5">Add Product</button>
+            <button class="btn-sell-to-dis" id="button" type="button" data-id="6">Buy(Distributor)</button>
+            <button class="btn-ship-to-dis" id="button" type="button" data-id="7">Ship(by farmer)</button>
+            <button class="btn-rec-by-dis" id="button" type="button" data-id="8">Receive(Distributor)</button>
+            <button class="btn-sell-to-ret" id="button" type="button" data-id="9">Buy(Retailer)</button>
+            <button class="btn-ship-to-ret" id="button" type="button" data-id="10">Ship(Distributor)</button>
+            <button class="btn-rec-by-ret" id="button" type="button" data-id="11">Receive(Retailer)</button>
+            <button class="btn-sell-to-cus" id="button" type="button" data-id="12">Purchase(Customer)</button>
+            <button class="btn-ship-to-cus" id="button" type="button" data-id="13">Ship(Retailer)</button>
+            <button class="btn-rec-by-cus" id="button" type="button" data-id="14">Receive(Customer)</button>
+        </div>
+        
+        <div class="form-group">
+        <div class=button-div>
+            <button class="btn-fetchTwo" id="button" type="button" data-id="15">Product Notes</button>
+            <p id="itemState"></p>
+            <!--<p>Farmer ID: 0x0e29501dB9A71e4FED4565937C17153071Cb65ca</p>
+            <p>Farmer Name: XYZ</p>
+            <p>Farmer Information: Vegetable Farmer</p>
+            <p>Farmer Location: 23.4194° N 91.1365° E</p>
+            <p id="itemState"></p>
+            <button class="btn-fetchTwo" id="button" type="button" data-id="16">Product Notes</button>-->
+            <!--<p>Product ID: 1</p>
+            <p>Product Type: Fresh Vegetables</p>
+            <p>Product Price: 1</p>
+            <p>Harvest Date: 12-09-2022</p>
+            <p>Current Owner ID: 0x98f02c33A832F0013d74e678fc3E925497059763</p>
+            <p id="ownerID"></p>-->
+        </div>
+        </div>
+        <div class=form-break></div>
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
