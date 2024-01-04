@@ -29,7 +29,7 @@ Figure 9: Events generated during transactions in Ganache<br>
 Figure 10: Demo user interface<br>
 ![7](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/d0a87ab6-2508-4e45-8182-f242a59ba93b)
 Figure 11: Demo user interface<br>
-![9](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/798e6217-2f79-481c-a45b-fbed870ee35b)
+![9](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/798e6217-2f79-481c-a45b-fbed870ee35b)<br>
 Figure 12: Transaction history generated according to each event shown in the UI<br>
 
 The whole working procedure is shown in the videos provided.
