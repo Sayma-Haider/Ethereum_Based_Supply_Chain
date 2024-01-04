@@ -13,7 +13,7 @@ Figure 3 shows the sequence of interactions among the relevant parties in the sy
 ![activity2 (1)](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/1a797479-54d6-4c26-9ea8-255d44f5319b)
 Figure 4: Activity diagram <br>
 Figure 4 shows all the functions used in each contract.<br>
-![Capture (1) (1)](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/9195af5b-51e0-4588-8b0e-9578214c7ac4)<br>
+![dapp2 (1)](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/b0cd77cf-d741-43c9-af3c-da2995df4c1f)<br>
 Figure 5: Architecture diagram of the decentralized application
 ![1](https://github.com/Sayma-Haider/Ethereum_Based_Supply_Chain/assets/24863170/8135e72b-ff0a-4a99-95ae-58a62616b915)<br>
 Figure 6: The accounts used in the system generated in Ganache<br>
