@@ -1,3 +1,4 @@
+**Note: this repository is archived and the images are watermarked. If necessary please contact: saimahaider965@gmail.com
 # Ethereum_Based_Supply_Chain
 In this project, an agri-food supply chain was implemented using the Ethereum blockchain network(private). Truffle was used as a development framework and ganache was used as a local blockchain. Smart contracts were written using Solidity. 
 The contracts were checked for vulnerability using Oyente and were found safe from common vulnerabilities. InterPlanatary File System (IPFS) to store data and the hash of that data was stored on the blockchain.
